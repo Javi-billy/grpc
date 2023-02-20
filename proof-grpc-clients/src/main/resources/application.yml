@@ -1,0 +1,52 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect    
+    defer-datasource-initialization: true  
+grpc:
+  client:
+    local-grpc-server:
+      address: static://localhost:6565
+      negotiationType: plaintext
+
+resilience4j:
+  circuitbreaker:
+      configs:
+        default:
+          sliding-window-size: 6
+          failure-rate-threshold: 50
+          wait-duration-in-open-state: 20s
+          permitted-number-of-calls-in-half-open-state: 4  
+          slow-call-rate-threshold: 50
+          slow-call-duration-threshold: 2s                 
+      instances:      
+        pricesMethods:
+          base-config: default
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 6s
+    instances:
+      pricesMethods:
+        base-config: default      
+#      registerHealthIndicator: true
+#      slidingWindowSize: 10
+#      permittedNumberOfCallsInHalfOpenState: 3
+#      slidingWindowType: TIME_BASED
+#      minimumNumberOfCalls: 3
+#      waitDurationInOpenState: 5s
+#      failureRateThreshold: 50
+#      eventConsumerBufferSize: 10
+
+#management:
+#  health.circuitbreakers.enabled: true
+#  endpoint.health.show-details: always      

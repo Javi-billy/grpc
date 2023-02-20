@@ -1,0 +1,16 @@
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\service\SearchService.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\GrpcClientApplication.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\application\SpringFoxConfig.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\persistence\entity\ProductEntity.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\rest\PriceController.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\service\impl\SearchServiceImpl.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\persistence\ProductRepositoryImpl.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\application\LogGrpcInterceptor.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\persistence\ProductEntityRepository.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\repository\ProductRespository.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\application\GlobalClientInterceptorConfig.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\model\CompleteInfo.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\model\Product.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\mapper\ProductMapper.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\adapter\rest\SearchController.java
+C:\Users\javier.escaladasarab\workspace\proof-grpc\proof-grpc-clients\src\main\java\es\proof\grpc\clients\domain\model\PriceGrpc.java
