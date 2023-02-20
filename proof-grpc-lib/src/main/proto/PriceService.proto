@@ -1,0 +1,33 @@
+syntax = "proto3";
+//import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+package com.grpc.price;
+
+message Id{
+  int32 id = 1;
+}
+
+message PriceResponse {
+    string brandId = 1;
+    int32 priceList = 2;
+    int32 productId = 3;
+    double priceProduct = 4;
+//    google.protobuf.Timestamp startDate = 5;
+}
+
+message Empty{
+
+}
+
+message PriceList{
+  repeated PriceResponse price = 1;
+}
+
+service PriceGrpcSrv {
+    rpc getPriceId(Id) returns (PriceResponse);
+
+    rpc getAllPrice(Empty) returns (PriceList);
+
+    rpc getAllStreamPrice(Empty) returns (stream PriceResponse);
+}
